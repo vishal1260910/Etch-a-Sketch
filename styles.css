@@ -1,0 +1,24 @@
+
+
+#container{
+	width: 640px;
+	height: 640px;
+	display: flex;
+/*	flex-shrink: 0;*/
+	flex-wrap: wrap;
+	box-sizing: border-box;
+}
+
+
+.innerGrid{
+	height: 38px;
+	width: 38px;
+	border: solid black 1px;
+}
+
+body{
+	display: flex;
+/*	align-items: center;*/
+	justify-content: center;
+}
+
