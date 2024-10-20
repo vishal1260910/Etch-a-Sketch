@@ -10,6 +10,8 @@
 
 .innerGrid{
 	border: solid black 1px;
+	box-sizing: border-box;   
+/*	above is necessart for all grids to fix inside the available container*/
 }
 
 body{

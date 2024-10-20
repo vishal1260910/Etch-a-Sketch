@@ -12,16 +12,21 @@ newSketch.addEventListener("click", function(){
   
   container.innerHTML="";
 
-   for(let i=0 ;i<grid_size**2; i++){
+   for(let i=0 ;i<grid_size*grid_size; i++){
       const grid = document.createElement("div");
       grid.classList.add("innerGrid");
       container.appendChild(grid);
    }
 
-      const grids = document.querySelectorAll(".innerGrid"); //for selecting all elements with class innergrid
-      grids.forEach(grid =>{                                                //grids is a nodeList to apply to all nodes you must use forEach loop
-       grid.style.width=(500/grid_size)-2 +"px" ;
-      grid.style.height =(500/grid_size)-2 + "px" ;
+      const grids = document.querySelectorAll(".innerGrid");
+         //for selecting all elements with class innergrid
+         
+       const gridWidth = 500 / grid_size; // Calculate width for each grid cell
+       const gridHeight = 500 / grid_size; // Calculate height for each grid cel
+
+         grids.forEach(grid =>{                                                //grids is a nodeList to apply to all nodes you must use forEach loop
+         grid.style.width= gridWidth+"px" ;
+         grid.style.height =gridHeight + "px" ;
 })
 
 
