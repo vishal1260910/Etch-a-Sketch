@@ -3,7 +3,12 @@ const newSketch = document.querySelector("#new");
 
 
 newSketch.addEventListener("click", function(){
-   let grid_size =prompt ("Enter grid size (Max 100)");
+   let grid_size =parseInt(prompt ("Enter grid size (Max 100)")); //take user input and convert it to number.
+  
+   
+   if (grid_size>100){
+      grid_size=100;                //Not allowing grid_size >100
+   }
   
   container.innerHTML="";
 
